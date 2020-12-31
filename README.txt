@@ -1,3 +1,10 @@
+arib-b25-stream-test.exe
+
+Tihs Repository wannabe the Windows Version of <https://www.npmjs.com/package/arib-b25-stream-test> .
+
+fork https://github.com/epgdatacapbon/libaribb25
+
+--------------------------------------------
 【名称】
 
 　ARIB STD-B25 仕様確認テストプログラム
