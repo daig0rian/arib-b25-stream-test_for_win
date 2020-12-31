@@ -1,8 +1,13 @@
 arib-b25-stream-test.exe
-
-Tihs Repository wannabe the Windows Version of <https://www.npmjs.com/package/arib-b25-stream-test> .
-
+Tihs Repository wannabe a <https://www.npmjs.com/package/arib-b25-stream-test> for windows. 
 fork https://github.com/epgdatacapbon/libaribb25
+
+How to builed
+C:\work\path> git clone https://github.com/daig0rian/arib-b25-stream-test_for_win
+C:\work\path> cd arib-b25-stream-test_for_win
+C:\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32" 
+and you got a "arib-b25-stream-test.exe" on C:\work\path\arib-b25-stream-test_for_win\Win32\Release
+
 
 --------------------------------------------
 【名称】
