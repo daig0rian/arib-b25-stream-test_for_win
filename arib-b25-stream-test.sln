@@ -3,10 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "b25", "aribb25\b25.vcxproj", "{6E77C1AC-A31A-49B9-9A52-9FE1E03B8FEC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arib-b25-stream-test", "aribb25\arib-b25-stream-test.vcxproj", "{6E77C1AC-A31A-49B9-9A52-9FE1E03B8FEC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libaribb25", "aribb25\libaribb25.vcxproj", "{32FCD075-2C1D-4796-926B-A0009ECCD1E8}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
