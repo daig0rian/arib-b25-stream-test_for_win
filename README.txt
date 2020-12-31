@@ -8,13 +8,14 @@ How to install build tools.
         PS C:\WINDOWS\system32> choco install git.install 
         PS C:\WINDOWS\system32> choco install visualstudio2017buildtools
     
-    Install "Windows 10 SDK (10.0.16299.0)" with "Visual Studio Installer" that on your Windows-StaerMenu.
+    Install "Windows 10 SDK (10.0.16299.0)" with "Visual Studio Installer" that on your Windows-Start-Menu.
 
 How to build
     C:\my\work\path> git clone https://github.com/daig0rian/arib-b25-stream-test_for_win
     C:\my\work\path> cd arib-b25-stream-test_for_win
-    C:\my\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32" 
-    .. nd you got a "arib-b25-stream-test.exe" on "C:\my\work\path\arib-b25-stream-test_for_win\Win32\Release"
+    C:\my\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32"
+    
+    ... and now you got a "arib-b25-stream-test.exe" on "C:\my\work\path\arib-b25-stream-test_for_win\Win32\Release" .
 
 
 --------------------------------------------
