@@ -37,6 +37,9 @@ How to build
 
 How to install build tools.
     Install "git" and "VC++ BuildTools" with "Chocolatey".
+        PowerShell(Run as administrator)
+        PS C:\WINDOWS\system32> # Chocolatey
+        PS C:\WINDOWS\system32> # https://chocolatey.org/install#installing-chocolatey
         PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; `
                                 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
                                 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
