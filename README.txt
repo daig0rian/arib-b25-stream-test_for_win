@@ -3,12 +3,9 @@ arib-b25-stream-test.exe
     This is forked from <https://github.com/epgdatacapbon/libaribb25>
 
 
-
-How to use 1
-    c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe | ffplay.exe -i -
-
-
-How to use 2 
+How to use
+    As a decoder for mirakurun on Windows.
+    
     c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
     -------------
     - name: PX_x3U4_S1
@@ -20,8 +17,10 @@ How to use 2
       isDisabled: false
     -------------
 
+How to test 1
+    c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe | ffplay.exe -i -
 
-How to use 3
+How to test 2
     c:\> curl --silent http://your-mirakurun:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe >dec1.ts 
 
 
