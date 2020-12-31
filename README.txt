@@ -1,12 +1,20 @@
 arib-b25-stream-test.exe
-Tihs Repository wannabe a <https://www.npmjs.com/package/arib-b25-stream-test> for windows. 
-fork https://github.com/epgdatacapbon/libaribb25
+    This Repository wannabe an arib-b25-stream-test <https://www.npmjs.com/package/arib-b25-stream-test> for windows. 
+    This is forked from <https://github.com/epgdatacapbon/libaribb25>
 
-How to builed
-C:\work\path> git clone https://github.com/daig0rian/arib-b25-stream-test_for_win
-C:\work\path> cd arib-b25-stream-test_for_win
-C:\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32" 
-and you got a "arib-b25-stream-test.exe" on C:\work\path\arib-b25-stream-test_for_win\Win32\Release
+How to install build tools.
+    Install "git" and "VC++ BuildTools" with "Chocolatey".
+        PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+        PS C:\WINDOWS\system32> choco install git.install 
+        PS C:\WINDOWS\system32> choco install visualstudio2017buildtools
+    
+    Install "Windows 10 SDK (10.0.16299.0)" with "Visual Studio Installer" that on your Windows-StaerMenu.
+
+How to build
+    C:\my\work\path> git clone https://github.com/daig0rian/arib-b25-stream-test_for_win
+    C:\my\work\path> cd arib-b25-stream-test_for_win
+    C:\my\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32" 
+    .. nd you got a "arib-b25-stream-test.exe" on "C:\my\work\path\arib-b25-stream-test_for_win\Win32\Release"
 
 
 --------------------------------------------
