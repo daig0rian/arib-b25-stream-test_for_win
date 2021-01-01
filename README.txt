@@ -18,10 +18,10 @@ How to use
     -------------
 
 How to test 1
-    c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe | ffplay.exe -i -
+    c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
 
 How to test 2
-    c:\> curl --silent http://your-mirakurun:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe >dec1.ts 
+    c:\> curl --silent http://192.168.0.3:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
 
 
 
