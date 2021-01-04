@@ -1,10 +1,8 @@
 # arib-b25-stream-test.exe
-    This Repository wannabe an arib-b25-stream-test <https://www.npmjs.com/package/arib-b25-stream-test> for windows. 
-    This is forked from <https://github.com/epgdatacapbon/libaribb25>
-
-
+This Repository wannabe an arib-b25-stream-test <https://www.npmjs.com/package/arib-b25-stream-test> for windows. 
+This is forked from <https://github.com/epgdatacapbon/libaribb25>
 # How to use
-    As a decoder for mirakurun on Windows.
+As a decoder for mirakurun on Windows.
     
     c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
     -------------
@@ -35,17 +33,17 @@
 
 
 # How to install build tools.
-    Install "git" and "VC++ BuildTools" with "Chocolatey".
-        PowerShell(Run as administrator)
-        PS C:\WINDOWS\system32> # Chocolatey
-        PS C:\WINDOWS\system32> # https://chocolatey.org/install#installing-chocolatey
-        PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; `
-                                [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
-                                iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-        PS C:\WINDOWS\system32> choco install git.install 
-        PS C:\WINDOWS\system32> choco install visualstudio2017buildtools
-    
-    Install "Windows 10 SDK (10.0.16299.0)" with "Visual Studio Installer" that on your Windows-Start-Menu.
+Install "git" and "VC++ BuildTools" with "Chocolatey".
+    PowerShell(Run as administrator)
+    PS C:\WINDOWS\system32> # Chocolatey
+    PS C:\WINDOWS\system32> # https://chocolatey.org/install#installing-chocolatey
+    PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; `
+                            [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+                            iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    PS C:\WINDOWS\system32> choco install git.install 
+    PS C:\WINDOWS\system32> choco install visualstudio2017buildtools
+  
+Install "Windows 10 SDK (10.0.16299.0)" with "Visual Studio Installer" that on your Windows-Start-Menu.
 
 
 --------------------------------------------
