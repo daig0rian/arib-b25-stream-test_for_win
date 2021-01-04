@@ -1,6 +1,7 @@
 # arib-b25-stream-test.exe
-This Repository wannabe an arib-b25-stream-test <https://www.npmjs.com/package/arib-b25-stream-test> for windows. 
-This is forked from <https://github.com/epgdatacapbon/libaribb25>
+This Repository wannabe an [arib-b25-stream-test](https://www.npmjs.com/package/arib-b25-stream-test) for windows. 
+This is forked from [epgdatacapbon/libaribb25](https://github.com/epgdatacapbon/libaribb25)
+
 # How to use
 As a decoder for mirakurun on Windows.
 ```    
