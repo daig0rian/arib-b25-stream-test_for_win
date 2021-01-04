@@ -3,46 +3,50 @@ This Repository wannabe an arib-b25-stream-test <https://www.npmjs.com/package/a
 This is forked from <https://github.com/epgdatacapbon/libaribb25>
 # How to use
 As a decoder for mirakurun on Windows.
-    
-    c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
-    -------------
-    - name: PX_x3U4_S1
-      types:
-        - BS
-        - CS
-      command: BonRecTest.exe --driver BonDriver_PX_x3U4_S.dll --output - --space <space> --channel <channel>
-      decoder: arib-b25-stream-test.exe
-      isDisabled: false
-    -------------
-
+```    
+c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
+```
+```
+-------------
+- name: PX_x3U4_S1
+  types:
+    - BS
+    - CS
+  command: BonRecTest.exe --driver BonDriver_PX_x3U4_S.dll --output - --space <space> --channel <channel>
+  decoder: arib-b25-stream-test.exe
+  isDisabled: false
+-------------
+```
 # How to test 1
-    c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
-
+```
+c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
+```
 # How to test 2
-    c:\> curl --silent http://192.168.0.3:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
-
-
-
+```
+c:\> curl --silent http://192.168.0.3:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
+```
 # How to build
-    C:\my\work\path> git clone https://github.com/daig0rian/arib-b25-stream-test_for_win
-    C:\my\work\path> cd arib-b25-stream-test_for_win
-    C:\my\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32"
-    
-    ... and now you got a "arib-b25-stream-test.exe" on "C:\my\work\path\arib-b25-stream-test_for_win\Win32\Release" .
+```
+C:\my\work\path> git clone https://github.com/daig0rian/arib-b25-stream-test_for_win
+C:\my\work\path> cd arib-b25-stream-test_for_win
+C:\my\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32"
+```    
+... and now you got a "arib-b25-stream-test.exe" on "C:\my\work\path\arib-b25-stream-test_for_win\Win32\Release" .
 
 
 
 # How to install build tools.
 Install "git" and "VC++ BuildTools" with "Chocolatey".
-    PowerShell(Run as administrator)
-    PS C:\WINDOWS\system32> # Chocolatey
-    PS C:\WINDOWS\system32> # https://chocolatey.org/install#installing-chocolatey
-    PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; `
-                            [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
-                            iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-    PS C:\WINDOWS\system32> choco install git.install 
-    PS C:\WINDOWS\system32> choco install visualstudio2017buildtools
-  
+```
+PowerShell(Run as administrator)
+PS C:\WINDOWS\system32> # Chocolatey
+PS C:\WINDOWS\system32> # https://chocolatey.org/install#installing-chocolatey
+PS C:\WINDOWS\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; `
+                        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+                        iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+PS C:\WINDOWS\system32> choco install git.install 
+PS C:\WINDOWS\system32> choco install visualstudio2017buildtools
+```
 Install "Windows 10 SDK (10.0.16299.0)" with "Visual Studio Installer" that on your Windows-Start-Menu.
 
 
