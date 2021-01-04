@@ -1,9 +1,9 @@
-arib-b25-stream-test.exe
+# arib-b25-stream-test.exe
     This Repository wannabe an arib-b25-stream-test <https://www.npmjs.com/package/arib-b25-stream-test> for windows. 
     This is forked from <https://github.com/epgdatacapbon/libaribb25>
 
 
-How to use
+# How to use
     As a decoder for mirakurun on Windows.
     
     c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
@@ -17,15 +17,15 @@ How to use
       isDisabled: false
     -------------
 
-How to test 1
+# How to test 1
     c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
 
-How to test 2
+# How to test 2
     c:\> curl --silent http://192.168.0.3:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
 
 
 
-How to build
+# How to build
     C:\my\work\path> git clone https://github.com/daig0rian/arib-b25-stream-test_for_win
     C:\my\work\path> cd arib-b25-stream-test_for_win
     C:\my\work\path\arib-b25-stream-test_for_win> msbuild /p:Configuration=Release /p:Platform="Win32"
@@ -34,7 +34,7 @@ How to build
 
 
 
-How to install build tools.
+# How to install build tools.
     Install "git" and "VC++ BuildTools" with "Chocolatey".
         PowerShell(Run as administrator)
         PS C:\WINDOWS\system32> # Chocolatey
