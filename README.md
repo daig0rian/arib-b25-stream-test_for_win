@@ -24,7 +24,7 @@ c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 
 ```
 # How to test 2
 ```
-c:\> curl --silent http://192.168.0.3:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
+c:\> curl --silent http://192.168.0.3:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe -v 1 > rectest.ts
 ```
 # How to build
 ```
