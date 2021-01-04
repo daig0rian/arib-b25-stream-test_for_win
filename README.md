@@ -1,8 +1,9 @@
 # arib-b25-stream-test.exe
+This is test program.
 This Repository wannabe an [arib-b25-stream-test](https://www.npmjs.com/package/arib-b25-stream-test) for windows. 
 This is forked from [epgdatacapbon/libaribb25](https://github.com/epgdatacapbon/libaribb25)
 
-# How to use
+# How to test 1
 As a decoder for mirakurun on Windows.
 ```    
 c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
@@ -18,11 +19,11 @@ c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
   isDisabled: false
 -------------
 ```
-# How to test 1
+# How to test 2
 ```
 c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe | ffplay.exe -i -
 ```
-# How to test 2
+# How to test 3
 ```
 c:\> curl --silent http://192.168.0.3:40772/api/services/3273601024/stream?decode=0 | arib-b25-stream-test.exe -v 1 > rectest.ts
 ```
