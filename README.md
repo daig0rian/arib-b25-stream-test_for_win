@@ -20,7 +20,7 @@ c:\> notepad.exe %USERPROFILE%\.Mirakurun\tuners.yml
 ```
 # How to test 1
 ```
-c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe -v 1 | ffplay.exe -i -
+c:\> BonRecTest.exe --log --driver BonDriver_PX_x3U4_T.dll --output - --channel 14 | arib-b25-stream-test.exe | ffplay.exe -i -
 ```
 # How to test 2
 ```
